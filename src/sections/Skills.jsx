@@ -14,7 +14,8 @@ import {
   SiTailwindcss,
   SiExpress,
   SiCplusplus,
-  SiNumpy
+  SiNumpy,
+  SiDjango
 } from 'react-icons/si';
 import { DiJava, DiMysql } from 'react-icons/di';
 
@@ -31,9 +32,10 @@ const Skills = () => {
     { name: 'React', icon: SiReact, color: '#61DAFB' },
 
     { name: 'Node.js', icon: SiNodedotjs, color: '#0fe20fff' },
+    { name: 'Django', icon: SiDjango, color: '#ffffff' },
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
-    { name: 'Express', icon: SiExpress, color: '#ffffff' },
+    
     
     
     

@@ -95,14 +95,16 @@ const Hero = () => {
               View Projects
             </motion.button>
 
-            <motion.button
+            <motion.a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')}
-              className="w-full sm:w-auto px-8 py-4 border-2 border-primary-cyan text-primary-cyan font-semibold rounded-lg hover:bg-primary-cyan/10 transition-all duration-300"
+              className="w-full sm:w-auto px-8 py-4 border-2 border-primary-cyan text-primary-cyan font-semibold rounded-lg hover:bg-primary-cyan/10 transition-all duration-300 text-center"
             >
-              Contact Me
-            </motion.button>
+              View Resume
+            </motion.a>
           </motion.div>
         </div>
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImage from './Images/prompt image.jpeg';
 
 const About = () => {
   return (
@@ -40,7 +39,7 @@ const About = () => {
                 <div className="aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
                   {/* Placeholder for profile photo */}
                   <img
-                    src= {profileImage}
+                    src="/Images/prompt image.jpeg"
                     alt="Bhargav Pasupuleti"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
