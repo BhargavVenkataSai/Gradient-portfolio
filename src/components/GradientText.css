@@ -1,0 +1,49 @@
+.gradient-text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.gradient-text-animated {
+  background: linear-gradient(
+    90deg,
+    #40ffaa 0%,
+    #4079ff 45%,
+    #40ffaa 50%,
+    #4079ff 70%,
+    #40ffaa 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s linear infinite;
+  font-weight: 800;
+}
+
+.gradient-text-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.7;
+  animation: gradientShift 8s linear infinite, pulse 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
