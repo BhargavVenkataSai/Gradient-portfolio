@@ -9,11 +9,10 @@ const Education = () => {
       institution: 'SRM Univerisyt,Amatavati',
       location: 'Neerukonda, Mangalgiri, Andhra Pradesh',
       period: '2021 - 2025',
-      gpa: '8.5/10.0',
       achievements: [
         'Specialized in Big Data Analytics',
         'Completed capstone project on AI-powered medical diagnosis system',
-        'Published research paper on deep learning applications',
+        'Presented a research paper on AI-powered medical diagnosis system',
         
       ],
       gradient: 'from-blue-500 to-purple-600',
@@ -21,14 +20,8 @@ const Education = () => {
     {
       degree: 'Intermediate (12th Grade)',
       institution: 'Bhashyam Vishwakarma',
-      location: 'City, State',
-      period: '2018 - 2020',
-      gpa: '90%',
-      achievements: [
-        'Focused on Mathematics, Physics, and Computer Science',
-        'Participated in national-level programming competitions',
-        'Received academic excellence award',
-      ],
+      location: 'Guntur, Andhra Pradesh',
+      period: '2019 - 2021',
       gradient: 'from-cyan-400 to-blue-500',
     },
   ];
