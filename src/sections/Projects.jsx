@@ -8,13 +8,19 @@ import {
   SiTensorflow, 
   SiMongodb,
   SiExpress,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSpringboot,
+  SiPostgresql,
+  SiDocker,
+  SiSpacy,
+  SiFastapi
 } from 'react-icons/si';
+import { DiJava } from 'react-icons/di';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'AI Tutor',
+      title: 'Educate.AI',
       description: 'An intelligent tutoring system powered by machine learning that provides personalized learning experiences and adaptive content recommendations.',
       tech: [
         { name: 'Python', icon: SiPython },
@@ -40,16 +46,31 @@ const Projects = () => {
       gradient: 'from-cyan-500 to-blue-600',
     },
     {
-      title: 'Food Delivery App',
-      description: 'Full-stack food delivery platform with real-time order tracking, payment integration, and restaurant management dashboard.',
+      title: 'SmartHR.AI',
+      description: 'A production-ready AI-powered platform that analyzes resumes, matches them with job descriptions using advanced NLP, and provides AI-driven improvement suggestions.',
       tech: [
+        { name: 'Python', icon: SiPython },
+        { name: 'TensorFlow', icon: SiTensorflow },
+        {name: 'Spacy', icon: SiSpacy},
         { name: 'React', icon: SiReact },
-        { name: 'Node.js', icon: SiNodedotjs },
-        { name: 'Express', icon: SiExpress },
-        { name: 'MongoDB', icon: SiMongodb },
-        { name: 'Tailwind', icon: SiTailwindcss },
+        { name: 'Tailwind CSS', icon: SiTailwindcss },
+        { name: 'FastAPI', icon: SiFastapi },
       ],
-      github: 'https://github.com/yourusername/food-delivery',
+      github: 'https://github.com/BhargavVenkataSai/-NeuroScan-AI',
+      demo: 'https://neuroscan-demo.com',
+      gradient: 'from-cyan-500 to-blue-600',
+    },
+    {
+      title: 'Supporting Ticket-System',
+      description: 'A full-stack ticketing system built with Spring Boot (Java) backend and Next.js frontend, featuring role-based access control, ticket management, and real-time updates.',
+      tech: [
+        { name: 'Java', icon: DiJava },
+        { name: 'React.js', icon: SiReact },
+        { name: 'Spring-Boot', icon: SiSpringboot },
+        { name: 'PostgreSQl', icon: SiPostgresql },
+        { name: 'Docker', icon: SiDocker },
+      ],
+      github: 'https://github.com/BhargavVenkataSai/ticket-system',
       demo: 'https://food-delivery-demo.com',
       gradient: 'from-green-500 to-emerald-600',
     },
@@ -94,7 +115,7 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            A showcase of my recent work in AI/ML and full-stack development
+            A showcase of my learning tuned into productive developement projects projected in both Full-stack and in AI/ML
           </p>
         </motion.div>
 

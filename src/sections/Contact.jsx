@@ -8,26 +8,25 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: FaGithub,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/BhargavVenkataSai',
       color: '#ffffff',
     },
     {
       name: 'LinkedIn',
       icon: FaLinkedin,
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/bhargav-venkat-sai-/',
       color: '#0077B5',
     },
     {
       name: 'Email',
       icon: FaEnvelope,
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:bhargavvenkatasai.p@gmail.com',
       color: '#EA4335',
     },
     {
       name: 'LeetCode',
       icon: SiLeetcode,
-      url: 'https://leetcode.com/yourusername',
-      color: '#FFA116',
+      url: 'https://leetcode.com/u/BhargavVenkatSai30/',
     },
   ];
 
@@ -102,7 +101,7 @@ const Contact = () => {
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
             <motion.a
-              href="mailto:your.email@example.com"
+              href="mailto:bhargavpasupuleti@example.com"
               whileHover={{ 
                 scale: 1.05,
                 boxShadow: '0 0 25px rgba(64, 255, 170, 0.5)'
@@ -128,7 +127,7 @@ const Contact = () => {
             © {new Date().getFullYear()} Bhargav Pasupuleti. Built with React, Vite, and Tailwind CSS.
           </p>
           <p className="text-gray-600 text-xs mt-2">
-            Designed with passion for creating intelligent digital experiences.
+            Designed with Learning, Love and Passion for creating intelligent digital experiences.
           </p>
         </motion.footer>
       </div>

@@ -95,39 +95,151 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="space-y-12"
         >
-          {skills.map((skill) => {
-            const Icon = skill.icon;
-            return (
-              <motion.div
-                key={skill.name}
-                variants={itemVariants}
-                whileHover={{ 
-                  scale: 1.05, 
-                  boxShadow: `0 0 30px ${skill.color}40`,
-                }}
-                className="relative group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-gray-700"
-              >
-                {/* Icon */}
-                <Icon 
-                  className="text-5xl transition-all duration-300 group-hover:scale-110" 
-                  style={{ color: skill.color }}
-                />
-                
-                {/* Skill Name */}
-                <h3 className="text-gray-200 font-semibold text-center">
-                  {skill.name}
-                </h3>
+          {/* Programming Languages */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-300 mb-6 flex items-center gap-2">
+              <span className="w-8 h-0.5 bg-gradient-to-r from-primary-cyan to-primary-blue"></span>
+              Programming Languages
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {skills.slice(0, 4).map((skill) => {
+                const Icon = skill.icon;
+                return (
+                  <motion.div
+                    key={skill.name}
+                    variants={itemVariants}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      boxShadow: `0 0 30px ${skill.color}40`,
+                    }}
+                    className="relative group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-gray-700"
+                  >
+                    <Icon 
+                      className="text-5xl transition-all duration-300 group-hover:scale-110" 
+                      style={{ color: skill.color }}
+                    />
+                    <h3 className="text-gray-200 font-semibold text-center">
+                      {skill.name}
+                    </h3>
+                    <div 
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
+                      style={{ backgroundColor: skill.color }}
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
 
-                {/* Glow Effect */}
-                <div 
-                  className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
-                  style={{ backgroundColor: skill.color }}
-                />
-              </motion.div>
-            );
-          })}
+          {/* Frontend */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-300 mb-6 flex items-center gap-2">
+              <span className="w-8 h-0.5 bg-gradient-to-r from-primary-cyan to-primary-blue"></span>
+              Frontend Development
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {skills.slice(4, 8).map((skill) => {
+                const Icon = skill.icon;
+                return (
+                  <motion.div
+                    key={skill.name}
+                    variants={itemVariants}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      boxShadow: `0 0 30px ${skill.color}40`,
+                    }}
+                    className="relative group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-gray-700"
+                  >
+                    <Icon 
+                      className="text-5xl transition-all duration-300 group-hover:scale-110" 
+                      style={{ color: skill.color }}
+                    />
+                    <h3 className="text-gray-200 font-semibold text-center">
+                      {skill.name}
+                    </h3>
+                    <div 
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
+                      style={{ backgroundColor: skill.color }}
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Backend & Database */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-300 mb-6 flex items-center gap-2">
+              <span className="w-8 h-0.5 bg-gradient-to-r from-primary-cyan to-primary-blue"></span>
+              Backend & Database
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {skills.slice(8, 12).map((skill) => {
+                const Icon = skill.icon;
+                return (
+                  <motion.div
+                    key={skill.name}
+                    variants={itemVariants}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      boxShadow: `0 0 30px ${skill.color}40`,
+                    }}
+                    className="relative group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-gray-700"
+                  >
+                    <Icon 
+                      className="text-5xl transition-all duration-300 group-hover:scale-110" 
+                      style={{ color: skill.color }}
+                    />
+                    <h3 className="text-gray-200 font-semibold text-center">
+                      {skill.name}
+                    </h3>
+                    <div 
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
+                      style={{ backgroundColor: skill.color }}
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Tools & AI/ML */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-300 mb-6 flex items-center gap-2">
+              <span className="w-8 h-0.5 bg-gradient-to-r from-primary-cyan to-primary-blue"></span>
+              Tools & AI/ML
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {skills.slice(12).map((skill) => {
+                const Icon = skill.icon;
+                return (
+                  <motion.div
+                    key={skill.name}
+                    variants={itemVariants}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      boxShadow: `0 0 30px ${skill.color}40`,
+                    }}
+                    className="relative group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-gray-700"
+                  >
+                    <Icon 
+                      className="text-5xl transition-all duration-300 group-hover:scale-110" 
+                      style={{ color: skill.color }}
+                    />
+                    <h3 className="text-gray-200 font-semibold text-center">
+                      {skill.name}
+                    </h3>
+                    <div 
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
+                      style={{ backgroundColor: skill.color }}
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
         </motion.div>
 
         {/* Additional Info */}
