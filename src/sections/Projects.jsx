@@ -72,7 +72,7 @@ const Projects = () => {
         { name: 'Docker', icon: SiDocker },
       ],
       github: 'https://github.com/BhargavVenkataSai/ticket-system',
-      demo: 'supporthubsystem.vercel.app',
+      demo: 'https://supporthubsystem.vercel.app',
       gradient: 'from-green-500 to-emerald-600',
     },
   ];
