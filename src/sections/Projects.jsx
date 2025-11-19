@@ -20,15 +20,16 @@ import { DiJava } from 'react-icons/di';
 const Projects = () => {
   const projects = [
     {
-      title: 'Educate.AI',
+      title: 'EducateMe.AI',
       description: 'An intelligent tutoring system powered by machine learning that provides personalized learning experiences and adaptive content recommendations.',
       tech: [
         { name: 'Python', icon: SiPython },
         { name: 'TensorFlow', icon: SiTensorflow },
         { name: 'React', icon: SiReact },
         { name: 'Node.js', icon: SiNodedotjs },
+        { name: 'FastAPI', icon: SiFastapi },
       ],
-      github: 'https://github.com/yourusername/ai-tutor',
+      github: 'https://github.com/BhargavVenkataSai/Enhanced-AI-Tutor-System',
       demo: 'https://ai-tutor-demo.com',
       gradient: 'from-blue-500 to-purple-600',
     },
@@ -71,7 +72,7 @@ const Projects = () => {
         { name: 'Docker', icon: SiDocker },
       ],
       github: 'https://github.com/BhargavVenkataSai/ticket-system',
-      demo: 'https://food-delivery-demo.com',
+      demo: 'supporthubsystem.vercel.app',
       gradient: 'from-green-500 to-emerald-600',
     },
   ];
