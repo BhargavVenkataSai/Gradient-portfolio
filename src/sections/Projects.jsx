@@ -47,7 +47,7 @@ const Projects = () => {
       gradient: 'from-cyan-500 to-blue-600',
     },
     {
-      title: 'SmartHR.AI',
+      title: 'Smart-Recruiter.AI',
       description: 'A production-ready AI-powered platform that analyzes resumes, matches them with job descriptions using advanced NLP, and provides AI-driven improvement suggestions.',
       tech: [
         { name: 'Python', icon: SiPython },
@@ -57,7 +57,7 @@ const Projects = () => {
         { name: 'Tailwind CSS', icon: SiTailwindcss },
         { name: 'FastAPI', icon: SiFastapi },
       ],
-      github: 'https://github.com/BhargavVenkataSai/-NeuroScan-AI',
+      github: 'https://github.com/BhargavVenkataSai/Smart-Recruiter-AI',
       demo: 'https://neuroscan-demo.com',
       gradient: 'from-cyan-500 to-blue-600',
     },
