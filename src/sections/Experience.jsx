@@ -11,6 +11,8 @@ const Experience = () => {
       period: 'Aug 2025 - Present',
       description: [
         'Developed and maintained a AI-contact-fetcher using full-stack web applications',
+        'Integrated AI model (Gemini model) to fetch the contacts using proxy search',
+        'Prompted model with safety and legal search',
         'Implemented with Django, React, Node.js, MongoDb, RESTful APIs and integrated third-party services to enhance functionality',
         'Collaborated with cross-functional teams to deliver high-quality software solutions',
         'Optimized application performance and improved code quality through code reviews',
