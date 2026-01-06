@@ -31,7 +31,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative py-32 bg-black">
+    <section id="contact" className="relative py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div

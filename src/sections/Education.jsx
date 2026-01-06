@@ -76,7 +76,7 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="relative py-32 bg-gradient-to-b from-gray-900 to-black">
+    <section id="education" className="relative py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div

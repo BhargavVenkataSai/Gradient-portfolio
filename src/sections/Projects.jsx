@@ -100,7 +100,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="relative py-32 bg-gradient-to-b from-black to-gray-900">
+    <section id="projects" className="relative py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div

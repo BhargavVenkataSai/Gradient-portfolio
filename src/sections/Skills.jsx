@@ -69,7 +69,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="relative py-32 bg-black">
+    <section id="skills" className="relative py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div

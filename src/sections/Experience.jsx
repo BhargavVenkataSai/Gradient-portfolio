@@ -43,7 +43,7 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="relative py-32 bg-black">
+    <section id="experience" className="relative py-32">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <motion.div

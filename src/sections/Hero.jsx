@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import LiquidEther from '../components/LiquidEther';
 import GradientText from '../components/GradientText';
 
 const Hero = () => {
@@ -30,26 +29,16 @@ const Hero = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offsetTop = element.offsetTop - 80; // Account for navbar
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Liquid Ether Background */}
-      <div className="absolute inset-0 w-full h-full">
-        <LiquidEther 
-          colors={['#40ffaa', '#4079ff', '#a040ff']}
-          resolution={0.25}
-          mouseForce={30}
-          cursorSize={80}
-          iterationsPoisson={16}
-          iterationsViscous={16}
-          autoSpeed={0.3}
-          autoIntensity={1.5}
-        />
-      </div>
-
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Content */}
       <motion.div
         variants={containerVariants}
