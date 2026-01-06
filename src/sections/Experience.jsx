@@ -6,12 +6,12 @@ const Experience = () => {
   const experiences = [
     {
       role: 'Python Developer intern',
-      company: 'Morh=phius AI',
+      company: 'Morphius AI',
       location: 'Remote',
       period: 'Aug 2025 - Present',
       description: [
-        'Developed and maintained full-stack web applications using React, Node.js, and PostgreSQL',
-        'Implemented RESTful APIs and integrated third-party services to enhance functionality',
+        'Developed and maintained a AI-contact-fetcher using full-stack web applications',
+        'Implemented with Django, React, Node.js, MongoDb, RESTful APIs and integrated third-party services to enhance functionality',
         'Collaborated with cross-functional teams to deliver high-quality software solutions',
         'Optimized application performance and improved code quality through code reviews',
       ],
